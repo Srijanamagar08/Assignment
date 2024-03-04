@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 42px;
+                color: yellow;
+            }
+            body{
+                background-color: skyblue;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            form{
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+            }
+        button {
+            background-color: white;
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            color: red;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        label{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <h1>Registration Form</h1>
+            <form action="#" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" placeholder="Enter First Name" required><br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" placeholder="Enter Last Name" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" required><br><br>
+
+                <label for="ph">Phone Number:</label>
+                <input type="tel" placeholder="Enter Valid Phone Number" pattern="[0-9]{10}" required><br><br>
+
+                <label for="gpa">Obtained GPA:</label>
+                <input type="number" placeholder="Enter Obtained GPA in High School" requied><br><br>
+
+                <label for="add">Address:</label>
+                <input type="text" placeholder="Enter Address" required><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" placeholder="Enter City" required><br><br>
+
+                <label for="province">Province:</label>
+                <select>
+                    <option value="#">Select the Province</option>
+                    <option value="p1">Province 1 [Np-1]</option>
+                    <option value="p2">Province 2 [Np-2]</option>
+                    <option value="p3">Province 3 [Np-3]</option>
+                    <option value="p4">Province 4 [Np-4]</option>
+                    <option value="p5">Province 5 [Np-5]</option>
+                    <option value="p6">Province 6 [Np-6]</option>
+                    <option value="p7">Province 7 [Np-7]</option>
+                    </select><br><br>
+
+                    <label for="scl">Previous School:</label>
+                <input type="text" placeholder="Enter Previous School Attended" required><br><br>
+
+                <label for="course">Desired Course:</label>
+                <select>
+                    <option value="#">Select a Course</option>
+                    <option value="bsc">BSC</option>
+                    <option value="bscit">BSCIT</option>
+                    <option value="mbbs">MBBS</option>
+                    <option value="btech">BTECH</option>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
